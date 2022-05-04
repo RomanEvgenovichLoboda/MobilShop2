@@ -19,10 +19,10 @@ namespace MobilShop
             InitializeComponent();
             name_label.Text = _name;
             company_label.Text = _company;
-            flash_label.Text = Convert.ToString(_flash);
-            ssd_label.Text = Convert.ToString(_SSD);
-            processor_label.Text = Convert.ToString(_processor);
-            price_label.Text = Convert.ToString(_price);
+            flash_label.Text = $"{_flash.ToString()} Gb";
+            ssd_label.Text = $"{_SSD.ToString()} Gb";
+            processor_label.Text = $"{ _processor.ToString()} Core";
+            price_label.Text = $"{_price.ToString()} ₴";
             pictureBox1.Image = images[_id - 1];
         }
     }

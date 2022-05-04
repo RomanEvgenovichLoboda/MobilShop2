@@ -33,6 +33,11 @@ namespace MobilShop
             {
                 groupBox1.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y)});
                 x += 200;
+                if(x/200 >= 3) 
+                {
+                    y += 220;
+                    x = 5;
+                }
             }
         }
     }
