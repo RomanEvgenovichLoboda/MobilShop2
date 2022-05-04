@@ -36,6 +36,7 @@ namespace MobilShop
             this.processor_label = new System.Windows.Forms.Label();
             this.price_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@ namespace MobilShop
             // 
             this.name_label.AutoSize = true;
             this.name_label.ForeColor = System.Drawing.Color.Gold;
-            this.name_label.Location = new System.Drawing.Point(127, 36);
+            this.name_label.Location = new System.Drawing.Point(163, 27);
             this.name_label.Name = "name_label";
             this.name_label.Size = new System.Drawing.Size(46, 17);
             this.name_label.TabIndex = 0;
@@ -53,7 +54,7 @@ namespace MobilShop
             // 
             this.company_label.AutoSize = true;
             this.company_label.ForeColor = System.Drawing.Color.Gold;
-            this.company_label.Location = new System.Drawing.Point(127, 71);
+            this.company_label.Location = new System.Drawing.Point(163, 62);
             this.company_label.Name = "company_label";
             this.company_label.Size = new System.Drawing.Size(46, 17);
             this.company_label.TabIndex = 1;
@@ -63,7 +64,7 @@ namespace MobilShop
             // 
             this.flash_label.AutoSize = true;
             this.flash_label.ForeColor = System.Drawing.Color.Gold;
-            this.flash_label.Location = new System.Drawing.Point(127, 107);
+            this.flash_label.Location = new System.Drawing.Point(163, 104);
             this.flash_label.Name = "flash_label";
             this.flash_label.Size = new System.Drawing.Size(46, 17);
             this.flash_label.TabIndex = 2;
@@ -73,7 +74,7 @@ namespace MobilShop
             // 
             this.ssd_label.AutoSize = true;
             this.ssd_label.ForeColor = System.Drawing.Color.Gold;
-            this.ssd_label.Location = new System.Drawing.Point(127, 142);
+            this.ssd_label.Location = new System.Drawing.Point(163, 133);
             this.ssd_label.Name = "ssd_label";
             this.ssd_label.Size = new System.Drawing.Size(46, 17);
             this.ssd_label.TabIndex = 3;
@@ -83,7 +84,7 @@ namespace MobilShop
             // 
             this.processor_label.AutoSize = true;
             this.processor_label.ForeColor = System.Drawing.SystemColors.Control;
-            this.processor_label.Location = new System.Drawing.Point(127, 174);
+            this.processor_label.Location = new System.Drawing.Point(163, 165);
             this.processor_label.Name = "processor_label";
             this.processor_label.Size = new System.Drawing.Size(46, 17);
             this.processor_label.TabIndex = 4;
@@ -107,16 +108,29 @@ namespace MobilShop
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(15, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.button1.Location = new System.Drawing.Point(214, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 56);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ProductControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::MobilShop.Properties.Resources.textures_pikseli_tsvet_ottenki_svet_77390;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.price_label);
             this.Controls.Add(this.processor_label);
@@ -125,7 +139,7 @@ namespace MobilShop
             this.Controls.Add(this.company_label);
             this.Controls.Add(this.name_label);
             this.Name = "ProductControl";
-            this.Size = new System.Drawing.Size(238, 268);
+            this.Size = new System.Drawing.Size(273, 268);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -141,5 +155,6 @@ namespace MobilShop
         private System.Windows.Forms.Label processor_label;
         private System.Windows.Forms.Label price_label;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
