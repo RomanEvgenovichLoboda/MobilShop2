@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +79,8 @@
     <Compile Include="Forms\Sign_In_Up.Designer.cs">
       <DependentUpon>Sign_In_Up.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mobile.cs" />
+    <Compile Include="Model_Db_Others.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Title.resx">
@@ -112,7 +116,9 @@
   <ItemGroup>
     <None Include="Resources\textures-pikseli-tsvet-ottenki-svet-77390.jpeg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Снимок экрана 2022-05-04 124223.png" />
   </ItemGroup>
