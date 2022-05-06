@@ -37,56 +37,62 @@ namespace MobilShop
             this.price_label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // name_label
             // 
             this.name_label.AutoSize = true;
-            this.name_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name_label.ForeColor = System.Drawing.Color.Blue;
             this.name_label.Location = new System.Drawing.Point(163, 27);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(46, 17);
+            this.name_label.Size = new System.Drawing.Size(52, 17);
             this.name_label.TabIndex = 0;
             this.name_label.Text = "label1";
             // 
             // company_label
             // 
             this.company_label.AutoSize = true;
-            this.company_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.company_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.company_label.ForeColor = System.Drawing.Color.Blue;
             this.company_label.Location = new System.Drawing.Point(163, 62);
             this.company_label.Name = "company_label";
-            this.company_label.Size = new System.Drawing.Size(46, 17);
+            this.company_label.Size = new System.Drawing.Size(52, 17);
             this.company_label.TabIndex = 1;
             this.company_label.Text = "label2";
             // 
             // flash_label
             // 
             this.flash_label.AutoSize = true;
-            this.flash_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.flash_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.flash_label.ForeColor = System.Drawing.Color.Blue;
             this.flash_label.Location = new System.Drawing.Point(163, 104);
             this.flash_label.Name = "flash_label";
-            this.flash_label.Size = new System.Drawing.Size(46, 17);
+            this.flash_label.Size = new System.Drawing.Size(52, 17);
             this.flash_label.TabIndex = 2;
             this.flash_label.Text = "label3";
             // 
             // ssd_label
             // 
             this.ssd_label.AutoSize = true;
-            this.ssd_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.ssd_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ssd_label.ForeColor = System.Drawing.Color.Blue;
             this.ssd_label.Location = new System.Drawing.Point(163, 133);
             this.ssd_label.Name = "ssd_label";
-            this.ssd_label.Size = new System.Drawing.Size(46, 17);
+            this.ssd_label.Size = new System.Drawing.Size(52, 17);
             this.ssd_label.TabIndex = 3;
             this.ssd_label.Text = "label4";
             // 
             // processor_label
             // 
             this.processor_label.AutoSize = true;
-            this.processor_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.processor_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.processor_label.ForeColor = System.Drawing.Color.Blue;
             this.processor_label.Location = new System.Drawing.Point(163, 165);
             this.processor_label.Name = "processor_label";
-            this.processor_label.Size = new System.Drawing.Size(46, 17);
+            this.processor_label.Size = new System.Drawing.Size(52, 17);
             this.processor_label.TabIndex = 4;
             this.processor_label.Text = "label5";
             // 
@@ -125,11 +131,26 @@ namespace MobilShop
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(123, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "₴";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // ProductControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.price_label);
@@ -156,5 +177,6 @@ namespace MobilShop
         private System.Windows.Forms.Label price_label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label1;
     }
 }

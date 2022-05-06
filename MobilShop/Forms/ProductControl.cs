@@ -15,7 +15,7 @@ namespace MobilShop
             flash_label.Text = $"{_flash.ToString()} Gb";
             ssd_label.Text = $"{_SSD.ToString()} Gb";
             processor_label.Text = $"{ _processor.ToString()} Core";
-            price_label.Text = $"{_price.ToString()} ₴";
+            price_label.Text = _price.ToString();
             pictureBox1.Image = images[_id - 1];
             if(!_My)
             {
@@ -31,6 +31,7 @@ namespace MobilShop
                 Shop.bay_mobile.Remove(name_label.Text);
                 Shop.AddProducts(Program.SP, "My");
                 Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
+                Program.SP.price_label.Text = Convert.ToString(double.Parse(Program.SP.price_label.Text) - double.Parse(price_label.Text));
             }
             else
             {
@@ -39,6 +40,8 @@ namespace MobilShop
                 {
                     Shop.bay_mobile.Add(name_label.Text);
                     Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
+                    double sum = double.Parse(Program.SP.price_label.Text) + double.Parse(price_label.Text);
+                    Program.SP.price_label.Text = sum.ToString();
                 }
             }
         }
