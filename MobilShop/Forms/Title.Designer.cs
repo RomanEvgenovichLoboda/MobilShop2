@@ -184,7 +184,7 @@ namespace MobilShop
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Bay_button;
+        public System.Windows.Forms.Button Bay_button;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button userButton;
         private System.Windows.Forms.Panel panel2;

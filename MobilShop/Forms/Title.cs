@@ -17,14 +17,9 @@ namespace MobilShop
             bay_mobile = new List<string>();
             AddProducts(this,"All");
         }
-        private void userButton_Click(object sender, EventArgs e)
-        {
-            Sign_In_Up signForm = new Sign_In_Up();
-            signForm.ShowDialog();
-            userButton.Text = signForm.check;
-        }
         public static void AddProducts(Shop shop,string _company)
         {
+            shop.Bay_button.Text = bay_mobile.Count.ToString();
             shop.panel2.Controls.Clear();
             int x = 5, y = 5;
             foreach (var item in shop.model.Mobiles)
@@ -63,15 +58,14 @@ namespace MobilShop
             }
         }
         private void All_button_Click(object sender, EventArgs e) { AddProducts(this,"All"); }
-
         private void Apple_button_Click(object sender, EventArgs e) { AddProducts(this,"Apple"); }
-
         private void Sumsung_button_Click(object sender, EventArgs e) { AddProducts(this,"Samsung"); }
-
-        private void Bay_button_Click(object sender, EventArgs e)
+        private void Bay_button_Click(object sender, EventArgs e) { AddProducts(this,"My"); }
+        private void userButton_Click(object sender, EventArgs e)
         {
-            Bay_button.Text = bay_mobile.Count.ToString();
-            AddProducts(this,"My");
+            Sign_In_Up signForm = new Sign_In_Up();
+            signForm.ShowDialog();
+            userButton.Text = signForm.check;
         }
     }
 }

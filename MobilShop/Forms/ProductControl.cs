@@ -25,13 +25,18 @@ namespace MobilShop
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "X")
+            if (button1.Text == "X")
             {
-                Parent.Controls.Remove(this); 
+                //Parent.Controls.Remove(this); 
                 Shop.bay_mobile.Remove(name_label.Text);
                 Shop.AddProducts(Program.SP, "My");
+                Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
             }
-            else Shop.bay_mobile.Add(name_label.Text);
+            else
+            {
+                Shop.bay_mobile.Add(name_label.Text);
+                Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
+            }
         }
     }
 }
