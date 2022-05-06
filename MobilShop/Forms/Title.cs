@@ -65,7 +65,6 @@ namespace MobilShop
         {
             Sign_In_Up signForm = new Sign_In_Up();
             signForm.ShowDialog();
-            userButton.Text = signForm.check;
         }
     }
 }

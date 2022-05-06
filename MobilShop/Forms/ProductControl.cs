@@ -24,7 +24,7 @@ namespace MobilShop
             }
         }
         private void button1_Click(object sender, EventArgs e)
-        {
+        { int counter = 0;
             if (button1.Text == "X")
             {
                 //Parent.Controls.Remove(this); 
@@ -34,8 +34,12 @@ namespace MobilShop
             }
             else
             {
-                Shop.bay_mobile.Add(name_label.Text);
-                Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
+                foreach (var item in Shop.bay_mobile) { if(item == name_label.Text) { counter++; } }
+                if(counter == 0)
+                {
+                    Shop.bay_mobile.Add(name_label.Text);
+                    Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
+                }
             }
         }
     }
