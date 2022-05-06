@@ -49,14 +49,14 @@ namespace MobilShop
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 67);
+            this.panel1.Size = new System.Drawing.Size(878, 67);
             this.panel1.TabIndex = 0;
             // 
             // userButton
             // 
             this.userButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.userButton.Image = global::MobilShop.Properties.Resources.icons8_user_32;
-            this.userButton.Location = new System.Drawing.Point(698, 3);
+            this.userButton.Location = new System.Drawing.Point(800, 3);
             this.userButton.Name = "userButton";
             this.userButton.Size = new System.Drawing.Size(75, 60);
             this.userButton.TabIndex = 3;
@@ -69,7 +69,7 @@ namespace MobilShop
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Image = global::MobilShop.Properties.Resources.icons8_bag_32;
-            this.button2.Location = new System.Drawing.Point(617, 3);
+            this.button2.Location = new System.Drawing.Point(719, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 61);
             this.button2.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace MobilShop
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Image = global::MobilShop.Properties.Resources.icons8_search2_32;
-            this.button1.Location = new System.Drawing.Point(536, 4);
+            this.button1.Location = new System.Drawing.Point(638, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 60);
             this.button1.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace MobilShop
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::MobilShop.Properties.Resources.textures_pikseli_tsvet_ottenki_svet_77390;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(902, 543);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

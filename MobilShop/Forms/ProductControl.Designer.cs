@@ -43,7 +43,7 @@ namespace MobilShop
             // name_label
             // 
             this.name_label.AutoSize = true;
-            this.name_label.ForeColor = System.Drawing.Color.Gold;
+            this.name_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.name_label.Location = new System.Drawing.Point(163, 27);
             this.name_label.Name = "name_label";
             this.name_label.Size = new System.Drawing.Size(46, 17);
@@ -53,7 +53,7 @@ namespace MobilShop
             // company_label
             // 
             this.company_label.AutoSize = true;
-            this.company_label.ForeColor = System.Drawing.Color.Gold;
+            this.company_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.company_label.Location = new System.Drawing.Point(163, 62);
             this.company_label.Name = "company_label";
             this.company_label.Size = new System.Drawing.Size(46, 17);
@@ -63,7 +63,7 @@ namespace MobilShop
             // flash_label
             // 
             this.flash_label.AutoSize = true;
-            this.flash_label.ForeColor = System.Drawing.Color.Gold;
+            this.flash_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.flash_label.Location = new System.Drawing.Point(163, 104);
             this.flash_label.Name = "flash_label";
             this.flash_label.Size = new System.Drawing.Size(46, 17);
@@ -73,7 +73,7 @@ namespace MobilShop
             // ssd_label
             // 
             this.ssd_label.AutoSize = true;
-            this.ssd_label.ForeColor = System.Drawing.Color.Gold;
+            this.ssd_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.ssd_label.Location = new System.Drawing.Point(163, 133);
             this.ssd_label.Name = "ssd_label";
             this.ssd_label.Size = new System.Drawing.Size(46, 17);
@@ -83,7 +83,7 @@ namespace MobilShop
             // processor_label
             // 
             this.processor_label.AutoSize = true;
-            this.processor_label.ForeColor = System.Drawing.SystemColors.Control;
+            this.processor_label.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.processor_label.Location = new System.Drawing.Point(163, 165);
             this.processor_label.Name = "processor_label";
             this.processor_label.Size = new System.Drawing.Size(46, 17);
@@ -128,8 +128,7 @@ namespace MobilShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::MobilShop.Properties.Resources.textures_pikseli_tsvet_ottenki_svet_77390;
+            this.BackColor = System.Drawing.Color.Yellow;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.price_label);
