@@ -13,18 +13,22 @@ namespace MobilShop
 {
     public partial class Shop : Form
     {
-        Model_Db_Others model = new Model_Db_Others();
+        Model_Db_Others model;
+        static public List<string> bay_mobile;
         public Shop()
         {
             InitializeComponent();
-           // AddProducts();
+            model = new Model_Db_Others();
+            bay_mobile = new List<string>();
+            AddProducts("All");
         }
 
         private void userButton_Click(object sender, EventArgs e)
         {
             Sign_In_Up signForm = new Sign_In_Up();
             signForm.ShowDialog();
-            userButton.Text = "IN";
+            userButton.Text = signForm.check;
+            //Bay_button.Text = "0";
         }
 
         
@@ -49,6 +53,18 @@ namespace MobilShop
                     panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
                     x += 220;
                 }
+                else if (_company == "My")
+                {
+                    foreach (var name_ in bay_mobile)
+                    {
+                        if(name_ == item.Name)
+                        {
+                            panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price, false) { Location = new Point(x, y), });
+                            x += 220;
+                        }
+                    }
+                    
+                }
                 if (x / 200 >= 3)
                 {
                     y += 230;
@@ -57,11 +73,17 @@ namespace MobilShop
             }
         }
 
-
+        
         private void All_button_Click(object sender, EventArgs e) { AddProducts("All"); }
 
         private void Apple_button_Click(object sender, EventArgs e) { AddProducts("Apple"); }
 
         private void Sumsung_button_Click(object sender, EventArgs e) { AddProducts("Samsung"); }
+
+        private void Bay_button_Click(object sender, EventArgs e)
+        {
+            Bay_button.Text = bay_mobile.Count.ToString();
+            AddProducts("My");
+        }
     }
 }

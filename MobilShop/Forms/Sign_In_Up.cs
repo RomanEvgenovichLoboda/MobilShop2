@@ -14,6 +14,7 @@ namespace MobilShop.Forms
 {
     public partial class Sign_In_Up : Form
     {
+        public string check;
         public Sign_In_Up()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace MobilShop.Forms
                 {
                     Registration reg = new Registration();
                     reg.signIn(emailBox.Text, passwordBox.Text);
+                    check = "IN";
                     this.Close();
                 }
             }
@@ -45,7 +47,7 @@ namespace MobilShop.Forms
                 {
                     Registration reg = new Registration();
                     reg.Regestration(emailBox.Text, passwordBox.Text);
-                    this.Close();
+                    MessageBox.Show("Registration Is OK =)");
                 }
             }
             else { MessageBox.Show("Wrong email format"); }

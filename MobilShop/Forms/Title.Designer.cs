@@ -30,14 +30,14 @@ namespace MobilShop
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.All_button = new System.Windows.Forms.Button();
             this.Apple_button = new System.Windows.Forms.Button();
             this.Sumsung_button = new System.Windows.Forms.Button();
+            this.userButton = new System.Windows.Forms.Button();
+            this.Bay_button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,59 +51,13 @@ namespace MobilShop
             this.panel1.Controls.Add(this.Apple_button);
             this.panel1.Controls.Add(this.All_button);
             this.panel1.Controls.Add(this.userButton);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.Bay_button);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(878, 67);
             this.panel1.TabIndex = 0;
-            // 
-            // userButton
-            // 
-            this.userButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.userButton.Image = global::MobilShop.Properties.Resources.icons8_user_32;
-            this.userButton.Location = new System.Drawing.Point(800, 3);
-            this.userButton.Name = "userButton";
-            this.userButton.Size = new System.Drawing.Size(75, 60);
-            this.userButton.TabIndex = 3;
-            this.userButton.Text = "UP";
-            this.userButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.userButton.UseVisualStyleBackColor = true;
-            this.userButton.Click += new System.EventHandler(this.userButton_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = global::MobilShop.Properties.Resources.icons8_bag_32;
-            this.button2.Location = new System.Drawing.Point(719, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 61);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "0";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Image = global::MobilShop.Properties.Resources.icons8_search2_32;
-            this.button1.Location = new System.Drawing.Point(638, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 60);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MobilShop.Properties.Resources.Снимок_экрана_2022_05_04_124223;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -157,6 +111,51 @@ namespace MobilShop
             this.Sumsung_button.UseVisualStyleBackColor = false;
             this.Sumsung_button.Click += new System.EventHandler(this.Sumsung_button_Click);
             // 
+            // userButton
+            // 
+            this.userButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.userButton.Image = global::MobilShop.Properties.Resources.icons8_user_32;
+            this.userButton.Location = new System.Drawing.Point(800, 3);
+            this.userButton.Name = "userButton";
+            this.userButton.Size = new System.Drawing.Size(75, 60);
+            this.userButton.TabIndex = 3;
+            this.userButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.userButton.UseVisualStyleBackColor = true;
+            this.userButton.Click += new System.EventHandler(this.userButton_Click);
+            // 
+            // Bay_button
+            // 
+            this.Bay_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bay_button.Image = global::MobilShop.Properties.Resources.icons8_bag_32;
+            this.Bay_button.Location = new System.Drawing.Point(719, 3);
+            this.Bay_button.Name = "Bay_button";
+            this.Bay_button.Size = new System.Drawing.Size(75, 61);
+            this.Bay_button.TabIndex = 2;
+            this.Bay_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bay_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Bay_button.UseVisualStyleBackColor = true;
+            this.Bay_button.Click += new System.EventHandler(this.Bay_button_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Image = global::MobilShop.Properties.Resources.icons8_search2_32;
+            this.button1.Location = new System.Drawing.Point(638, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 60);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MobilShop.Properties.Resources.Снимок_экрана_2022_05_04_124223;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,7 +184,7 @@ namespace MobilShop
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Bay_button;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button userButton;
         private System.Windows.Forms.Panel panel2;
