@@ -17,6 +17,7 @@ namespace MobilShop
         public Shop()
         {
             InitializeComponent();
+           // AddProducts();
         }
 
         private void userButton_Click(object sender, EventArgs e)
@@ -26,31 +27,28 @@ namespace MobilShop
             userButton.Text = "IN";
         }
 
-        private void Shop_Load(object sender, EventArgs e)
+        
+        private void AddProducts(string _company)
         {
-            //int x = 5, y = 100;
-
-            //foreach (var item in model.Mobiles)
-            //{
-            //    Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
-            //    x += 220;
-            //    if(x/200 >= 3) 
-            //    {
-            //        y += 230;
-            //        x = 5;
-            //    }
-            //}
-            AddProducts();
-        }
-        private void AddProducts()
-        {
+            panel2.Controls.Clear();
             int x = 5, y = 5;
-
             foreach (var item in model.Mobiles)
             {
-                panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
-                //Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
-                x += 220;
+                if (_company == "All")
+                {
+                    panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
+                    x += 220;
+                }
+                else if(_company == "Apple" && _company == item.Company)
+                {
+                    panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
+                    x += 220;
+                }
+                else if (_company == "Samsung" && _company == item.Company)
+                {
+                    panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
+                    x += 220;
+                }
                 if (x / 200 >= 3)
                 {
                     y += 230;
@@ -58,13 +56,12 @@ namespace MobilShop
                 }
             }
         }
-        private void RemoveProducts()
-        {
-            foreach (var item in model.Mobiles)
-            {
-                panel2.Controls.Clear();
-                //Controls.Remove()
-            }
-        }
+
+
+        private void All_button_Click(object sender, EventArgs e) { AddProducts("All"); }
+
+        private void Apple_button_Click(object sender, EventArgs e) { AddProducts("Apple"); }
+
+        private void Sumsung_button_Click(object sender, EventArgs e) { AddProducts("Samsung"); }
     }
 }
