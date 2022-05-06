@@ -67,9 +67,8 @@ namespace MobilShop
             // 
             this.search_textBox.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_textBox.Location = new System.Drawing.Point(479, 20);
-            this.search_textBox.Multiline = true;
             this.search_textBox.Name = "search_textBox";
-            this.search_textBox.Size = new System.Drawing.Size(167, 32);
+            this.search_textBox.Size = new System.Drawing.Size(167, 27);
             this.search_textBox.TabIndex = 7;
             // 
             // Sumsung_button

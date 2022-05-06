@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace MobilShop
 {
-   static public class Program
+    static public class Program
     {
        static public Shop SP;
         /// <summary>
