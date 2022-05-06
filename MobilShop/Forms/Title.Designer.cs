@@ -34,6 +34,10 @@ namespace MobilShop
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.All_button = new System.Windows.Forms.Button();
+            this.Phones_button = new System.Windows.Forms.Button();
+            this.Comp_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +47,9 @@ namespace MobilShop
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.Comp_button);
+            this.panel1.Controls.Add(this.Phones_button);
+            this.panel1.Controls.Add(this.All_button);
             this.panel1.Controls.Add(this.userButton);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -98,6 +105,55 @@ namespace MobilShop
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Location = new System.Drawing.Point(12, 85);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(878, 446);
+            this.panel2.TabIndex = 1;
+            // 
+            // All_button
+            // 
+            this.All_button.BackColor = System.Drawing.Color.Transparent;
+            this.All_button.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.All_button.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.All_button.Location = new System.Drawing.Point(140, 5);
+            this.All_button.Name = "All_button";
+            this.All_button.Size = new System.Drawing.Size(146, 59);
+            this.All_button.TabIndex = 4;
+            this.All_button.Text = "ALL";
+            this.All_button.UseVisualStyleBackColor = false;
+            // 
+            // Phones_button
+            // 
+            this.Phones_button.BackColor = System.Drawing.Color.Transparent;
+            this.Phones_button.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phones_button.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.Phones_button.Location = new System.Drawing.Point(292, 5);
+            this.Phones_button.Name = "Phones_button";
+            this.Phones_button.Size = new System.Drawing.Size(146, 59);
+            this.Phones_button.TabIndex = 5;
+            this.Phones_button.Text = "Phones";
+            this.Phones_button.UseVisualStyleBackColor = false;
+            // 
+            // Comp_button
+            // 
+            this.Comp_button.BackColor = System.Drawing.Color.Transparent;
+            this.Comp_button.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comp_button.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.Comp_button.Location = new System.Drawing.Point(444, 5);
+            this.Comp_button.Name = "Comp_button";
+            this.Comp_button.Size = new System.Drawing.Size(146, 59);
+            this.Comp_button.TabIndex = 6;
+            this.Comp_button.Text = "Comp";
+            this.Comp_button.UseVisualStyleBackColor = false;
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -110,6 +166,7 @@ namespace MobilShop
             this.BackgroundImage = global::MobilShop.Properties.Resources.textures_pikseli_tsvet_ottenki_svet_77390;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(902, 543);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -130,6 +187,10 @@ namespace MobilShop
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button userButton;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button Comp_button;
+        private System.Windows.Forms.Button Phones_button;
+        private System.Windows.Forms.Button All_button;
     }
 }
 
