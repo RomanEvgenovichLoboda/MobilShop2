@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MobilShop
 {
-    static class Program
+   static public class Program
     {
+       static public Shop SP;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +14,8 @@ namespace MobilShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Shop());
+            SP = new Shop();
+            Application.Run(SP);
         }
     }
 }

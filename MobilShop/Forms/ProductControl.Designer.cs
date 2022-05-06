@@ -94,7 +94,7 @@ namespace MobilShop
             // 
             this.price_label.AutoSize = true;
             this.price_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.price_label.ForeColor = System.Drawing.Color.GreenYellow;
+            this.price_label.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.price_label.Location = new System.Drawing.Point(10, 209);
             this.price_label.Name = "price_label";
             this.price_label.Size = new System.Drawing.Size(70, 25);

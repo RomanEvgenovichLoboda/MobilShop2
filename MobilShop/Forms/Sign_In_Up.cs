@@ -1,15 +1,7 @@
 ﻿using MobilShop.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MobilShop.Forms
 {
     public partial class Sign_In_Up : Form
@@ -19,7 +11,6 @@ namespace MobilShop.Forms
         {
             InitializeComponent();
         }
-
         private void SignInButton_Click(object sender, EventArgs e)
         {
             string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$";
@@ -36,7 +27,6 @@ namespace MobilShop.Forms
             }
             else { MessageBox.Show("Wrong email format"); }
         }
-
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$";
