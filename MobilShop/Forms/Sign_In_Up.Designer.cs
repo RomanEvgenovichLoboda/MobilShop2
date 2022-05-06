@@ -122,7 +122,7 @@ namespace MobilShop.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.emailBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign_In_Up";
             this.Text = "Sign In or Up";
             this.ResumeLayout(false);

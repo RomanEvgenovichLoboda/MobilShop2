@@ -190,11 +190,11 @@ namespace MobilShop
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(864, 608);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 30);
+            this.label1.Size = new System.Drawing.Size(27, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "₴";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

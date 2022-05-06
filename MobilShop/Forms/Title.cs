@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-
 namespace MobilShop
 {
     public partial class Shop : Form
@@ -17,7 +16,17 @@ namespace MobilShop
             bay_mobile = new List<string>();
             AddProducts(this,"All");
         }
-        public static void AddProducts(Shop shop,string _company,bool search = false)
+        private void Bay_button_Click(object sender, EventArgs e) { AddProducts(this, "My"); }
+        private void All_button_Click(object sender, EventArgs e) { AddProducts(this,"All"); }
+        private void Apple_button_Click(object sender, EventArgs e) { AddProducts(this,"Apple"); }
+        private void Sumsung_button_Click(object sender, EventArgs e) { AddProducts(this,"Samsung"); }
+        private void find_button_Click(object sender, EventArgs e) { AddProducts(this, search_textBox.Text, true); }
+        private void userButton_Click(object sender, EventArgs e)
+        {
+            Sign_In_Up signForm = new Sign_In_Up();
+            signForm.ShowDialog();
+        }
+        public static void AddProducts(Shop shop, string _company, bool search = false)
         {
             shop.Bay_button.Text = bay_mobile.Count.ToString();
             shop.panel2.Controls.Clear();
@@ -29,7 +38,7 @@ namespace MobilShop
                     shop.panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
                     x += 220;
                 }
-                else if(_company == "Apple" && _company == item.Company)
+                else if (_company == "Apple" && _company == item.Company)
                 {
                     shop.panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y) });
                     x += 220;
@@ -43,7 +52,7 @@ namespace MobilShop
                 {
                     foreach (var name_ in bay_mobile)
                     {
-                        if(name_ == item.Name)
+                        if (name_ == item.Name)
                         {
                             shop.panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price, false) { Location = new Point(x, y), });
                             x += 220;
@@ -52,9 +61,9 @@ namespace MobilShop
                 }
                 else if (search)
                 {
-                    if (_company == item.Name || _company == item.Company)
+                    if (_company.ToLower() == item.Name.ToLower() || _company.ToLower() == item.Company.ToLower())
                     {
-                        shop.panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price, false) { Location = new Point(x, y), });
+                        shop.panel2.Controls.Add(new ProductControl(item.Id, item.Name, item.Company, item.Flash, item.SSD, item.Processor, item.Price) { Location = new Point(x, y), });
                         x += 220;
                     }
                 }
@@ -64,16 +73,6 @@ namespace MobilShop
                     x = 5;
                 }
             }
-        }
-        private void All_button_Click(object sender, EventArgs e) { AddProducts(this,"All"); }
-        private void Apple_button_Click(object sender, EventArgs e) { AddProducts(this,"Apple"); }
-        private void Sumsung_button_Click(object sender, EventArgs e) { AddProducts(this,"Samsung"); }
-        private void Bay_button_Click(object sender, EventArgs e) { AddProducts(this,"My"); }
-        private void find_button_Click(object sender, EventArgs e) { AddProducts(this, search_textBox.Text, true); }
-        private void userButton_Click(object sender, EventArgs e)
-        {
-            Sign_In_Up signForm = new Sign_In_Up();
-            signForm.ShowDialog();
         }
     }
 }

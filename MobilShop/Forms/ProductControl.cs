@@ -27,7 +27,6 @@ namespace MobilShop
         { int counter = 0;
             if (button1.Text == "X")
             {
-                //Parent.Controls.Remove(this); 
                 Shop.bay_mobile.Remove(name_label.Text);
                 Shop.AddProducts(Program.SP, "My");
                 Program.SP.Bay_button.Text = Shop.bay_mobile.Count.ToString();
